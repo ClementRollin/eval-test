@@ -1,0 +1,128 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* App Container */
+.app-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Note Form */
+.note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.note-form input,
+.note-form textarea,
+.note-form button {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    color: black;
+}
+
+.note-form input,
+.note-form textarea {
+    background-color: #f9f9f9;
+}
+
+.note-form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.note-form button:hover {
+    background-color: #218838;
+}
+
+/* Note List */
+.note-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note-item {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.note-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.note-item p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* Note Colors */
+.note-red {
+    background-color: #f8d7da;
+}
+
+.note-orange {
+    background-color: #fff3cd;
+}
+
+.note-yellow {
+    background-color: #fffbea;
+}
+
+.note-green {
+    background-color: #d4edda;
+}
+
+/* Note Detail */
+.note-detail {
+    margin-top: 10px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.note-detail p {
+    margin-bottom: 5px;
+}
+
+/* Utilities */
+.text-center {
+    text-align: center;
+}
